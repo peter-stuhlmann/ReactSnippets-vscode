@@ -1,0 +1,25 @@
+{
+  "name": "react-snippets",
+  "displayName": "React Snippets",
+  "description": "Code snippets for React App",
+  "version": "0.0.1",
+  "publisher": "peter-stuhlmann",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/peter-stuhlmann/ReactSnippets-vscode"
+  },
+  "engines": {
+    "vscode": "^1.45.0"
+  },
+  "categories": [
+    "Snippets"
+  ],
+  "contributes": {
+    "snippets": [
+      {
+        "language": "javascript",
+        "path": "./snippets/snippets.json"
+      }
+    ]
+  }
+}
