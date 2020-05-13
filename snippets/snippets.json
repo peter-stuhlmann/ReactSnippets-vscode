@@ -1,0 +1,37 @@
+{
+  "class": {
+    "prefix": "cc",
+    "body": [
+      "class ${1} extends Component {",
+      "\trender() {",
+      "\t\treturn (",
+      "\t\t\t<Fragment>Lorem ipsum</Fragment>",
+      "\t\t);",
+      "\t}",
+      "}"
+    ],
+    "description": "Class component"
+  },
+  "function": {
+    "prefix": "fc",
+    "body": [
+      "function ${1}() {",
+      "\treturn (",
+      "\t\t<Fragment>Lorem ipsum</Fragment>",
+      "\t)",
+      "}"
+    ],
+    "description": "Functional component"
+  },
+  "const": {
+    "prefix": "fca",
+    "body": [
+      "const ${1} = (props) => {",
+      "\treturn (",
+      "\t\t<Fragment>Lorem ipsum</Fragment>",
+      "\t);",
+      "};"
+    ],
+    "description": "Functional component (arrow function)"
+  }
+}
