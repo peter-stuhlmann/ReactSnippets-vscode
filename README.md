@@ -7,11 +7,15 @@
 
 ---
 
+## Download
+
+You can [download the extension](https://marketplace.visualstudio.com/items?itemName=peter-stuhlmann.react-snippets) from the Visual Studio Marketplace.
+
 ## Snippets
 
 Below is a list of all available snippets and the Shortcodes of each one.
 
-| Shortcodes | Content                                      |
+| Shortcodes | Description                                  |
 | ---------: | -------------------------------------------- |
 |       `cc` | class component                              |
 |       `fc` | functional component                         |
