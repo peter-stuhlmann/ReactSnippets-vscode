@@ -15,11 +15,13 @@ You can [download the extension](https://marketplace.visualstudio.com/items?item
 
 Below is a list of all available snippets and the Shortcodes of each one.
 
-| Shortcodes | Description                                  |
-| ---------: | -------------------------------------------- |
-|       `cc` | class component                              |
-|       `fc` | functional component                         |
-|      `fca` | functional component (const; arrow function) |
+|   Shortcodes | Description                                  |
+| -----------: | -------------------------------------------- |
+|         `cc` | class component                              |
+|         `fc` | functional component                         |
+|        `fca` | functional component (const; arrow function) |
+|     `router` | router                                       |
+| `lazyrouter` | router with lazy loaded components           |
 
 ## License
 

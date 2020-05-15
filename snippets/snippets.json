@@ -33,5 +33,45 @@
       "};"
     ],
     "description": "Functional component (arrow function)"
+  },
+  "Router": {
+    "prefix": "router",
+    "body": [
+      "import React from 'react';",
+      "import { Switch, Route, Redirect } from 'react-router-dom';",
+      "",
+      "import ${1} from './${1}';",
+      "",
+      "export default function Router() {",
+      "\treturn (",
+      "\t\t<Switch>",
+      "\t\t\t<Route exact path=\"${2}\" component={${1}} />",
+      "\t\t\t<Route exact path=\"/redirect\" render={() => <Redirect to=\"${2}\" />} />",
+      "\t\t</Switch>",
+      "\t);",
+      "}"
+    ],
+    "description": "React router with lazy loaded components"
+  },
+  "Router with LazyLoad": {
+    "prefix": "lazyrouter",
+    "body": [
+      "import React, { Suspense, lazy } from 'react';",
+      "import { Switch, Route, Redirect } from 'react-router-dom';",
+      "",
+      "const ${1} = lazy(() => import('./${1}'));",
+      "",
+      "export default function Router() {",
+      "\treturn (",
+      "\t\t<Suspense fallback={<div>Loading...</div>}>",
+      "\t\t\t<Switch>",
+      "\t\t\t\t<Route exact path=\"${2}\" component={${1}} />",
+      "\t\t\t\t<Route exact path=\"/redirect\" render={() => <Redirect to=\"${2}\" />} />",
+      "\t\t\t</Switch>",
+      "\t\t</Suspense>",
+      "\t);",
+      "}"
+    ],
+    "description": "React router with lazy loaded components"
   }
 }
