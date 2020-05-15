@@ -3,6 +3,7 @@
   "displayName": "React Snippets",
   "description": "Code snippets for React App",
   "version": "0.0.1",
+  "license": "MIT",
   "publisher": "peter-stuhlmann",
   "repository": {
     "type": "git",
@@ -19,7 +20,11 @@
     "snippets": [
       {
         "language": "javascript",
-        "path": "./snippets/snippets.json"
+        "path": "./snippets/components.json"
+      },
+      {
+        "language": "javascript",
+        "path": "./snippets/router.json"
       }
     ]
   }
