@@ -15,13 +15,16 @@ You can [download the extension](https://marketplace.visualstudio.com/items?item
 
 Below is a list of all available snippets and the Shortcodes of each one.
 
-|   Shortcodes | Description                                  |
-| -----------: | -------------------------------------------- |
-|         `cc` | class component                              |
-|         `fc` | functional component                         |
-|        `fca` | functional component (const; arrow function) |
-|     `router` | router                                       |
-| `lazyrouter` | router with lazy loaded components           |
+|   Shortcodes | Description                                                  |
+| -----------: | ------------------------------------------------------------ |
+|      `class` | class component                                              |
+|     `iclass` | class component with import of React, Component and Fragment |
+|   `function` | functional component                                         |
+|  `ifunction` | functional component with import of React and Fragment       |
+|      `const` | const (arrow function)                                       |
+|     `iconst` | const (arrow function) with import of React and Fragment     |
+|     `router` | router                                                       |
+| `lazyrouter` | router with lazy loaded components                           |
 
 ## License
 

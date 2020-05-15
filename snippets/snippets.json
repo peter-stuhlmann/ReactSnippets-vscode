@@ -1,8 +1,8 @@
 {
   "class": {
-    "prefix": "cc",
+    "prefix": "class",
     "body": [
-      "class ${1} extends Component {",
+      "${2} class ${1} extends Component {",
       "\trender() {",
       "\t\treturn (",
       "\t\t\t<Fragment>Lorem ipsum</Fragment>",
@@ -12,10 +12,25 @@
     ],
     "description": "Class component"
   },
-  "function": {
-    "prefix": "fc",
+  "class with import": {
+    "prefix": "iclass",
     "body": [
-      "function ${1}() {",
+      "import React, { Component, Fragment } from 'react';",
+      "",
+      "${2} class ${1} extends Component {",
+      "\trender() {",
+      "\t\treturn (",
+      "\t\t\t<Fragment>Lorem ipsum</Fragment>",
+      "\t\t);",
+      "\t}",
+      "}"
+    ],
+    "description": "Class component with import of React, Component and Fragment"
+  },
+  "function": {
+    "prefix": "function",
+    "body": [
+      "${2} function ${1}() {",
       "\treturn (",
       "\t\t<Fragment>Lorem ipsum</Fragment>",
       "\t)",
@@ -23,16 +38,42 @@
     ],
     "description": "Functional component"
   },
-  "const": {
-    "prefix": "fca",
+  "function with import": {
+    "prefix": "ifunction",
     "body": [
-      "const ${1} = (props) => {",
+      "import React, { Fragment } from 'react';",
+      "",
+      "${2} function ${1}() {",
+      "\treturn (",
+      "\t\t<Fragment>Lorem ipsum</Fragment>",
+      "\t)",
+      "}"
+    ],
+    "description": "Functional component with import of React and Fragment"
+  },
+  "const": {
+    "prefix": "const",
+    "body": [
+      "${2} const ${1} = (props) => {",
       "\treturn (",
       "\t\t<Fragment>Lorem ipsum</Fragment>",
       "\t);",
       "};"
     ],
-    "description": "Functional component (arrow function)"
+    "description": "const; arrow function (functional component)"
+  },
+  "const with import": {
+    "prefix": "iconst",
+    "body": [
+      "import React, { Fragment } from 'react';",
+      "",
+      "${2} const ${1} = (props) => {",
+      "\treturn (",
+      "\t\t<Fragment>Lorem ipsum</Fragment>",
+      "\t);",
+      "};"
+    ],
+    "description": "const; arrow function (functional component) with import of React and Fragment"
   },
   "Router": {
     "prefix": "router",
