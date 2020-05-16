@@ -1,0 +1,31 @@
+{
+  "Router": {
+    "prefix": "context",
+    "body": [
+      "import React, { createContext, useState } from 'react';",
+      "",
+      "const Context${2} = createContext(null);",
+      "",
+      "export default function ContextProvider${1}({ children }) {",
+      "\tconst [count, setCount] = useState(0);",
+      "",
+      "\treturn (",
+      "\t\t<Context${2}.Provider",
+      "\t\t\tvalue={{",
+      "\t\t\t\tcount,",
+      "\t\t\t\tsetCount,",
+      "\t\t\t}}",
+      "\t\t>",
+      "\t\t\t{children}",
+      "\t\t</Context${2}.Provider>",
+      "\t);",
+      "}",
+      "",
+      "// Don't forget this: Wrap your app in the context provider, like in the example:",
+      "//   <ContextProvider${1}>",
+      "//     <App />",
+      "//   </ContextProvider${1}>"
+    ],
+    "description": "Context with Hooks"
+  }
+}

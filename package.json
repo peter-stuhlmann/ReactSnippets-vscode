@@ -24,6 +24,10 @@
       },
       {
         "language": "javascript",
+        "path": "./snippets/context.json"
+      },
+      {
+        "language": "javascript",
         "path": "./snippets/router.json"
       }
     ]

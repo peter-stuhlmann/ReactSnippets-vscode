@@ -23,6 +23,7 @@ Below is a list of all available snippets and the Shortcodes of each one.
 |  `ifunction` | functional component with import of React and Fragment       |
 |      `const` | const (arrow function)                                       |
 |     `iconst` | const (arrow function) with import of React and Fragment     |
+|    `context` | context provider                                             |
 |     `router` | router                                                       |
 | `lazyrouter` | router with lazy loaded components                           |
 
