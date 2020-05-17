@@ -15,6 +15,8 @@ You can [download the extension](https://marketplace.visualstudio.com/items?item
 
 Below is a list of all available snippets and the Shortcodes of each one.
 
+### Brief overview
+
 |   Shortcodes | Description                                                  |
 | -----------: | ------------------------------------------------------------ |
 |      `class` | class component                                              |
@@ -26,6 +28,144 @@ Below is a list of all available snippets and the Shortcodes of each one.
 |    `context` | context provider                                             |
 |     `router` | router                                                       |
 | `lazyrouter` | router with lazy loaded components                           |
+
+### Generated code snipptes
+
+#### `class` - class component
+
+```
+| class | extends Component {
+  render() {
+    return (
+      <Fragment>Lorem ipsum</Fragment>
+    );
+  }
+}
+```
+
+#### `iclass` - class component with import of React, Component and Fragment
+
+```
+import React, { Component, Fragment } from 'react';
+
+| class | extends Component {
+  render() {
+    return (
+      <Fragment>Lorem ipsum</Fragment>
+    );
+  }
+}
+```
+
+#### `function` - functional component
+
+```
+| function |() {
+  return (
+    <Fragment>Lorem ipsum</Fragment>
+  )
+}
+```
+
+#### `ifunction` - functional component with import of React and Fragment
+
+```
+import React, { Fragment } from 'react';
+
+| function |() {
+  return (
+    <Fragment>Lorem ipsum</Fragment>
+  )
+}
+```
+
+#### `const` - const (arrow function)
+
+```
+| const | = (props) => {
+  return (
+    <Fragment>Lorem ipsum</Fragment>
+  );
+};
+```
+
+#### `iconst` - const (arrow function) with import of React and Fragment
+
+```
+import React, { Fragment } from 'react';
+
+| const | = (props) => {
+  return (
+    <Fragment>Lorem ipsum</Fragment>
+  );
+};
+```
+
+#### `context` - context provider
+
+```
+import React, { createContext, useState } from 'react';
+
+const Context| = createContext(null);
+
+export default function ContextProvider|({ children }) {
+  const [count, setCount] = useState(0);
+
+  return (
+    <Context|.Provider
+      value={{
+        count,
+        setCount,
+      }}
+    >
+      {children}
+    </Context|.Provider>
+  );
+}
+
+// Don't forget this: Wrap your app in the context provider, like in the example:
+//   <ContextProvider|>
+//     <App />
+//   </ContextProvider|>
+```
+
+#### `router` - router
+
+```
+import React from 'react';
+import { Switch, Route, Redirect } from 'react-router-dom';
+
+import | from './|';
+
+export default function Router() {
+  return (
+    <Switch>
+      <Route exact path="|" component={|} />
+      <Route exact path="/redirect" render={() => <Redirect to="|" />} />
+    </Switch>
+  );
+}
+```
+
+#### `lazyrouter` - router with lazy loaded components
+
+```
+import React, { Suspense, lazy } from 'react';
+import { Switch, Route, Redirect } from 'react-router-dom';
+
+const | = lazy(() => import('./|'));
+
+export default function Router() {
+  return (
+    <Suspense fallback={<div>Loading...</div>}>
+      <Switch>
+        <Route exact path="|" component={|} />
+        <Route exact path="/redirect" render={() => <Redirect to="|" />} />
+      </Switch>
+    </Suspense>
+  );
+}
+```
 
 ## License
 
