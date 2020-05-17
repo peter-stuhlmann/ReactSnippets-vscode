@@ -33,7 +33,7 @@ Below is a list of all available snippets and the Shortcodes of each one.
 
 #### `class` - class component
 
-```
+```javascript
 | class | extends Component {
   render() {
     return (
@@ -45,7 +45,7 @@ Below is a list of all available snippets and the Shortcodes of each one.
 
 #### `iclass` - class component with import of React, Component and Fragment
 
-```
+```javascript
 import React, { Component, Fragment } from 'react';
 
 | class | extends Component {
@@ -59,7 +59,7 @@ import React, { Component, Fragment } from 'react';
 
 #### `function` - functional component
 
-```
+```javascript
 | function |() {
   return (
     <Fragment>Lorem ipsum</Fragment>
@@ -69,7 +69,7 @@ import React, { Component, Fragment } from 'react';
 
 #### `ifunction` - functional component with import of React and Fragment
 
-```
+```javascript
 import React, { Fragment } from 'react';
 
 | function |() {
@@ -81,7 +81,7 @@ import React, { Fragment } from 'react';
 
 #### `const` - const (arrow function)
 
-```
+```javascript
 | const | = (props) => {
   return (
     <Fragment>Lorem ipsum</Fragment>
@@ -91,7 +91,7 @@ import React, { Fragment } from 'react';
 
 #### `iconst` - const (arrow function) with import of React and Fragment
 
-```
+```javascript
 import React, { Fragment } from 'react';
 
 | const | = (props) => {
@@ -103,7 +103,7 @@ import React, { Fragment } from 'react';
 
 #### `context` - context provider
 
-```
+```javascript
 import React, { createContext, useState } from 'react';
 
 const Context| = createContext(null);
@@ -131,7 +131,7 @@ export default function ContextProvider|({ children }) {
 
 #### `router` - router
 
-```
+```javascript
 import React from 'react';
 import { Switch, Route, Redirect } from 'react-router-dom';
 
@@ -149,7 +149,7 @@ export default function Router() {
 
 #### `lazyrouter` - router with lazy loaded components
 
-```
+```javascript
 import React, { Suspense, lazy } from 'react';
 import { Switch, Route, Redirect } from 'react-router-dom';
 
