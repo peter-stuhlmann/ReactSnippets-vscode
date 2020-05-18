@@ -20,15 +20,15 @@
     "snippets": [
       {
         "language": "javascript",
-        "path": "./snippets/components.json"
+        "path": "./snippets/javascript/components.json"
       },
       {
         "language": "javascript",
-        "path": "./snippets/context.json"
+        "path": "./snippets/javascript/context.json"
       },
       {
         "language": "javascript",
-        "path": "./snippets/router.json"
+        "path": "./snippets/javascript/router.json"
       }
     ]
   }
