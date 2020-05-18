@@ -2,7 +2,7 @@
   "class": {
     "prefix": "class",
     "body": [
-      "${2} class ${1} extends Component {",
+      "${2:export default }class ${1:name} extends Component {",
       "\trender() {",
       "\t\treturn (",
       "\t\t\t<Fragment>Lorem ipsum</Fragment>",
@@ -17,7 +17,7 @@
     "body": [
       "import React, { Component, Fragment } from 'react';",
       "",
-      "${2} class ${1} extends Component {",
+      "${2:export default }class ${1:name} extends Component {",
       "\trender() {",
       "\t\treturn (",
       "\t\t\t<Fragment>Lorem ipsum</Fragment>",
@@ -30,7 +30,7 @@
   "function": {
     "prefix": "function",
     "body": [
-      "${2} function ${1}() {",
+      "${2:export default }function ${1:name}() {",
       "\treturn (",
       "\t\t<Fragment>Lorem ipsum</Fragment>",
       "\t)",
@@ -43,7 +43,7 @@
     "body": [
       "import React, { Fragment } from 'react';",
       "",
-      "${2} function ${1}() {",
+      "${2:export default }function ${1:name}() {",
       "\treturn (",
       "\t\t<Fragment>Lorem ipsum</Fragment>",
       "\t)",
@@ -54,7 +54,7 @@
   "const": {
     "prefix": "const",
     "body": [
-      "${2} const ${1} = (props) => {",
+      "${2:export }const ${1:name} = (props) => {",
       "\treturn (",
       "\t\t<Fragment>Lorem ipsum</Fragment>",
       "\t);",
@@ -67,7 +67,7 @@
     "body": [
       "import React, { Fragment } from 'react';",
       "",
-      "${2} const ${1} = (props) => {",
+      "${2:export }const ${1:name} = (props) => {",
       "\treturn (",
       "\t\t<Fragment>Lorem ipsum</Fragment>",
       "\t);",
