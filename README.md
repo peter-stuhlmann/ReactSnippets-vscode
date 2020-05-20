@@ -1,5 +1,6 @@
 # Useful React Snippets (Visual Studio Code Extension)
 
+![Release](https://img.shields.io/github/v/release/peter-stuhlmann/ReactSnippets-vscode)
 [![MIT License](https://img.shields.io/github/license/peter-stuhlmann/ReactSnippets-vscode.svg)](https://github.com/peter-stuhlmann/ReactSnippets-vscode/blob/master/LICENSE)
 ![Code size](https://img.shields.io/github/languages/code-size/peter-stuhlmann/ReactSnippets-vscode.svg)
 ![open issues](https://img.shields.io/github/issues/peter-stuhlmann/ReactSnippets-vscode.svg)

@@ -2,7 +2,7 @@
   "name": "react-snippets",
   "displayName": "React Snippets",
   "description": "Code snippets for React App",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "license": "MIT",
   "publisher": "peter-stuhlmann",
   "repository": {
