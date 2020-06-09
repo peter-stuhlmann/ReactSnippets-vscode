@@ -18,6 +18,8 @@ Below is a list of all available snippets and the Shortcodes of each one.
 
 ### Brief overview
 
+**Javascript**
+
 |   Shortcodes | Description                                                  |
 | -----------: | ------------------------------------------------------------ |
 |      `class` | class component                                              |
@@ -30,9 +32,23 @@ Below is a list of all available snippets and the Shortcodes of each one.
 |     `router` | router                                                       |
 | `lazyrouter` | router with lazy loaded components                           |
 
+**Markdown**
+
+|         Shortcodes | Description                                |
+| -----------------: | ------------------------------------------ |
+|           `mdlink` | link                                       |
+|      `mdlinktitle` | link with title                            |
+|          `mdimage` | image                                      |
+|     `mdimagetitle` | image with title                           |
+|      `mdlinkimage` | image link                                 |
+| `mdlinkimagetitle` | image link with title                      |
+|          `mdtable` | table with tablehead, 5 columns and 3 rows |
+
 ### Generated code snipptes
 
-#### `class` - class component
+#### Javascript snippets
+
+**`class` - class component**
 
 ```javascript
 | class | extends Component {
@@ -44,7 +60,7 @@ Below is a list of all available snippets and the Shortcodes of each one.
 }
 ```
 
-#### `iclass` - class component with import of React, Component and Fragment
+**`iclass` - class component with import of React, Component and Fragment**
 
 ```javascript
 import React, { Component, Fragment } from 'react';
@@ -58,7 +74,7 @@ import React, { Component, Fragment } from 'react';
 }
 ```
 
-#### `function` - functional component
+**`function` - functional component**
 
 ```javascript
 | function |() {
@@ -68,7 +84,7 @@ import React, { Component, Fragment } from 'react';
 }
 ```
 
-#### `ifunction` - functional component with import of React and Fragment
+**`ifunction` - functional component with import of React and Fragment**
 
 ```javascript
 import React, { Fragment } from 'react';
@@ -80,7 +96,7 @@ import React, { Fragment } from 'react';
 }
 ```
 
-#### `const` - const (arrow function)
+**`const` - const (arrow function)**
 
 ```javascript
 | const | = (props) => {
@@ -90,7 +106,7 @@ import React, { Fragment } from 'react';
 };
 ```
 
-#### `iconst` - const (arrow function) with import of React and Fragment
+**`iconst` - const (arrow function) with import of React and Fragment**
 
 ```javascript
 import React, { Fragment } from 'react';
@@ -102,7 +118,7 @@ import React, { Fragment } from 'react';
 };
 ```
 
-#### `context` - context provider
+**`context` - context provider**
 
 ```javascript
 import React, { createContext, useState } from 'react';
@@ -130,7 +146,7 @@ export default function ContextProvider|({ children }) {
 //   </ContextProvider|>
 ```
 
-#### `router` - router
+**`router` - router**
 
 ```javascript
 import React from 'react';
@@ -148,7 +164,7 @@ export default function Router() {
 }
 ```
 
-#### `lazyrouter` - router with lazy loaded components
+**`lazyrouter` - router with lazy loaded components**
 
 ```javascript
 import React, { Suspense, lazy } from 'react';
@@ -166,6 +182,54 @@ export default function Router() {
     </Suspense>
   );
 }
+```
+
+#### Markdown snippets
+
+**`mdlink` - link**
+
+```markdown
+[link text](url)
+```
+
+**`mdlinktitle` - link with title**
+
+```markdown
+[link text](url 'title')
+```
+
+**`mdimage` - image**
+
+```markdown
+![alt](path)
+```
+
+**`mdimagetitle` - image with title**
+
+```markdown
+![alt](path 'title')
+```
+
+**`mdlinkimage` - image link**
+
+```markdown
+[![alt](path)](url)
+```
+
+**`mdlinkimagetitle` - image link with title**
+
+```markdown
+[![alt](path 'title')](url)
+```
+
+**`mdtable` - table with tablehead, 5 columns and 3 rows**
+
+```markdown
+|     |     |     |     |     |
+| --- | --- | --- | --- | --- |
+|     |     |     |     |     |
+|     |     |     |     |     |
+|     |     |     |     |     |
 ```
 
 ## License
