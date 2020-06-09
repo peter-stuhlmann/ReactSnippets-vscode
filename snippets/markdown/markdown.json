@@ -1,0 +1,48 @@
+{
+  "MD link": {
+    "prefix": "mdlink",
+    "body": ["[${1:link text}](${2:url})"],
+    "description": "MD link"
+  },
+  "MD link with title": {
+    "prefix": "mdlinktitle",
+    "body": ["[${1:link text}](${2:url} \"${3:title}\")"],
+    "description": "MD link with title"
+  },
+  "MD image": {
+    "prefix": "mdimage",
+    "body": ["![${1:alt}](${2:path})"],
+    "description": "MD image"
+  },
+  "MD image with title": {
+    "prefix": "mdimagetitle",
+    "body": ["![${1:alt}](${2:path} \"${3:title}\")"],
+    "description": "MD image with title"
+  },
+  "MD linked image": {
+    "prefix": "mdlinkimage",
+    "body": ["[![${1:alt}](${2:path})](${3:url})"],
+    "description": "MD linked image"
+  },
+  "MD linked image with title": {
+    "prefix": "mdlinkimagetitle",
+    "body": ["[![${1:alt}](${2:path} \"${3:title}\")](${4:url})"],
+    "description": "MD linked image with title"
+  },
+  "MD table": {
+    "prefix": "mdtable",
+    "body": [
+      "|${1}   |   |   |   |   |",
+      "|---|---|---|---|---|",
+      "|   |   |   |   |   |",
+      "|   |   |   |   |   |",
+      "|   |   |   |   |   |"
+    ],
+    "description": "MD table"
+  },
+  "MD code block": {
+    "prefix": "mdcode",
+    "body": ["```", "${1:enter code}", "```"],
+    "description": "MD code block"
+  }
+}
